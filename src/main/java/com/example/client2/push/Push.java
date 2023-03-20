@@ -4,7 +4,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class Push {
-    @RequestMapping(value="/push", method= RequestMethod.POST)
+    @PostMapping("/push")
     public String sendPush() {
         System.out.println("push was sent");
         return "push was sent";
